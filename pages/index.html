@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Responsive Navbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-container">
+    <div class="container-fluid">
+
+        <a class="navbar-brand support-text d-none d-lg-block fs-6" href="#">
+            Support: 08028385491 / info@hmtwatches.in
+        </a>
+
+        <div class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-lg-end">
+
+            <div class="dropdown">
+                <button class="btn language-btn dropdown-toggle ps-3 pe-3 me-3"
+                        type="button"
+                        data-bs-toggle="dropdown">
+                    Language
+                </button>
+                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Tamil</a></li>
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#topNavContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="topNavContent">
+            <ul class="navbar-nav align-items-lg-center gap-lg-3 mt-3 mt-lg-0 text-nowrap">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-person"></i> Login/Register
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-heart"></i> Wishlist
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="bi bi-cart"></i> Cart(0)
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<section >
+    <div class="container mt-3 ms-5 d-md-block d-none  ">
+        <div class="row align-items-center ">
+
+            <div class="col-md-5">
+                <ul class="d-flex gap-5 list-unstyled mb-0 justify-content-end me-2">
+                    <li class="list-text">WATCHES</li>
+                    <li class="list-text">TOWER CLOCK</li>
+                    <li class="list-text">GIFTING</li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <img src="../assests/logo.png" alt="Logo" style="width: 150px;">
+            </div>
+
+            <div class="col-md-5">
+                <ul class="d-flex gap-5 list-unstyled mb-0 justify-content-start align-items-center">
+                    <li class="list-text">ABOUT US</li>
+                    <li class="list-text">CONTACT US</li>
+                    <li class="list-text">STORE LOCATOR</li>
+                    <li><i class="bi bi-search"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-light d-md-none d-block">
+        <div class="container-fluid d-flex align-items-center justify-content-between px-4">
+            <img src="../assests/logo.png" alt="Logo" style="width: 150px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse px-4" id="mobileNavContent">
+            <ul class="navbar-nav mt-2 gap-1">
+                <li class="nav-item fw-bold"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item fw-bold"><a class="nav-link" href="#">Watches</a></li>
+                <li class="nav-item fw-bold"><a class="nav-link" href="#">Collections</a></li>
+                <li class="nav-item fw-bold"><a class="nav-link" href="#">Gifting</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<section class="container-fluid mt-3 custom-carousel">
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="../assests/image1.jpg"
+                     class="d-block w-100 carousel-img"
+                     alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../assests/image2.jpg"
+                     class="d-block w-100 carousel-img"
+                     alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../assests/image3.jpg"
+                     class="d-block w-100 carousel-img"
+                     alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../assests/image4.jpg"
+                     class="d-block w-100 carousel-img"
+                     alt="">
+            </div>
+
+        </div>
+
+        <!-- Previous -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</section>
+
+<section class="p-3 mt-4 mt-md-5 text-center" style="background-color:  #0033AB; color: white;">
+    <p class="h5 mt-2 slogan">COME , DISCOVER HMT WATCHES. IT WILL CHANGE THE WAY YOU LOOK AT TIME</p>
+</section>
+
+<section class="text-dark text-center mt-4">
+    <p class="fw-bold shop-for ms-4">SHOP FOR</p>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="image-card d-flex justify-content-end">
+                     <img src="https://www.hmtwatches.in/storage/app/public/image/main/030125960464655DSC03165.jpg">
+                     <div class="img-text">MEN</div>
+                </div>
+            </div>
+              <div class="col-12 col-md-6">
+                <div class="image-card d-flex justify-content-start">
+                    <img src="https://www.hmtwatches.in/storage/app/public/image/main/2812241690021721DSC08678.jpg">
+                    <div class="img-text-women">WOMEN</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="text-dark text-center mt-4">
+    <p class="fw-bold shop-for ms-4">TRENDING PRODUCTS</p>
+</section>
+
+<section  class="mt-4">
+    <ul class="list-unstyled d-flex text-secondary fw-bold gap-4 justify-content-center list-items">
+        <li>Newly Listed</li>
+        <li>Fast Moving</li>
+        <li>Product With Offer</li>
+        <li>Premium Watches</li>
+    </ul>
+</section>
+
+   <div class="carousel-wrapper">
+        <button class="nav-btn prev" onclick="loopCarousel('trending-carousel', -1)">&#10094;</button >
+        <div class="carousel-track-outer">
+            <div class="big-container" id="trending-carousel">
+                <div class="image-box">
+                    <div class="HMT-galaxy"> 
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/0908251835473597.jpg" alt="hmt Galaxy">
+                        
+                        </div>
+                        <span>HMT Plus JGBKL 04 Grey</span>
+                        <span>Rs 2000</span>
+                    </div>
+                    <div class="hoverItems"><ul><li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></li><li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                    
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy">
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1302241967250819.jpg" alt="hmt Galaxy"></div>
+                        <span>HMT Pace UGBLBL 101 Black</span>
+                        <span>Rs 1553</span>
+                    </div>
+                    <div class="hoverItems"><ul><li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></li><li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy">
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/071124254880339.jpg" alt="hmt Galaxy"></div>
+                        <span>HMT Galaxy CG2G05</span>
+                        <span>Rs 1553</span>
+                    </div>
+                    <div class="hoverItems"><ul><li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></li><li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy">
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/0701252111020971.jpg" alt="hmt Galaxy"></div>
+                        <span>HMT Utsav BLS 80 Ye..</span>
+                        <span>Rs 1553</span>
+                    </div>
+                   <span class="offer">25%</span>
+                    <div class="hoverItems"><ul><li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></li><li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                </div>
+                    <div class="image-box">
+                    <div class="HMT-galaxy">
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/2804261723919194.jpg" alt="hmt Galaxy"></div>
+                        <span>HMT Utsav BLN 01 IP..</span>
+                        <span>Rs 1553</span>
+                    </div>
+                      <p class="out">OUT OF STOCK</p>
+                    <div class="hoverItems"><ul><li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></li><li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                </div>
+               
+                 <div class="image-box">
+                    <div class="HMT-galaxy">
+                        <div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/all_images/1302241529732335.jpg" alt="hmt Galaxy"></div>
+                        <span>HMT Pace UGSS 101 Saffron</span>
+                        <span>Rs 1553</span>
+                    </div>
+                      <span class="offer">25%</span>
+                    <div class="hoverItems">
+                        <ul>
+                        <li data-tooltip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+                        </li>
+                        <li data-tooltip="Quick View"><i class="fa-solid fa-eye"></i></li><li data-tooltip="Compare"><i class="fa-solid fa-repeat"></i></li></ul></div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn next" onclick="loopCarousel('trending-carousel', 1)">&#10095;</button>
+    </div>
+
+    <section class="text-secondary text-center mt-4">
+    <p class=" fw-bold shop-for ms-4" style="font-size: 20px;">HMT EXPLORE WATCHES</p>
+</section>
+
+  <section class="text-secondary text-center mt-4 hmt-explore">
+    <p class=" shop-for ms-4" style="font-size: 14px;">HMT explore watches description.</p>
+</section>
+
+<section class="hmt-skeleton position-relative">
+     <img src="https://www.hmtwatches.in/storage/app/public/image/main/031742104784.jpg" class="d-block" style="width:100%;">
+        <button class="hms-button"><i class="fa-solid fa-play"></i></button>
+</section>
+
+    <section class="text-dark text-center mt-5 hmt-collection">
+    <p class=" fw-bold shop-for ms-4 fs-5" style="font-size: 20px;">HMT COLLECTIONS</p>
+</section>
+
+   <div class="carousel-wrapper">
+        <button class="nav-btn prev" onclick="loopCarousel('collections-carousel', -1)">&#10094;</button>
+        <div class="carousel-track-outer">
+            <div class="big-container" id="collections-carousel">
+                <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/collections/2324175928.jpg"></div><p>Gandaberunda</p></div>
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/021516297734.jpg">
+                    </div>
+                    <p>Bahadur</p>
+                </div>
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png"></div><p>Vijay</p>
+                </div>
+
+                </div>
+                <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/collections/28594529980.jpg"></div><p>pilot Automatic</p></div>
+                </div>
+                  <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/collections/081880758978.jpg"></div><p>vivek</p></div>
+                </div>
+                 <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/251258350521.jpg"></div><p>jawan Automatic</p>
+                    </div>
+                    <span class="offer">25%</span>
+                </div>
+                 <div class="image-box">
+                    <div class="HMT-galaxy"><div class="i"><img src="https://www.hmtwatches.in/storage/app/public/image/collections/032125154046.jpg"></div><p>Operation Sindoor</p></div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn next" onclick="loopCarousel('collections-carousel', 1)">&#10095;</button>
+    </div>
+
+  <section class="position-relative">
+    
+    <div>
+        <img src="../assests/hmt banner.jpg" class="w-100" alt="">
+    </div>
+
+    <div class="banner-txt position-absolute d-none d-md-block ">
+        <p class="a">ACCURATE TIME KEEPING AND TROUBLE FREE PERFORMANCE</p>
+        <p>HMT WATCHES</p>
+        <button class="btn custom-btn ">DISCOVER YOUR STYLE</button>
+    </div>
+
+</section>
+
+ <div class="paragraph ">
+        <p>We have immense pleasure in welcoming you to the official website of HMT Watches!. HMT, a Public Sector Undertaking by Government of India, is a pioneer in Watch manufacturing in India since 1961. HMT uses High Quality, Precision Metallic components for Accurate time keeping and trouble free performance - that lasts a life time. Mechanical Hand wound, Automatic, Quarts, the Braille, the Skeleton Watch, Pocket Watch - each a true masterpiece in its class. HMT Watches come in a wide range of Attractive designs and Affordable Price. Watches that are an exquisite blend of form and function, of style and substance.</p>
+        <div class="p-button-container">
+            <button class="hhw">HISTORY OF HMT WATCHES</button>
+            <button class="hpm">HMT PREMIUM WATCHES</button>
+        </div>
+    </div>
+
+      <section class="position-relative banner">
+    
+    <div>
+        <img src="../assests/banner2.jpg" class="w-100" alt="">
+    </div>
+
+    <div class="banner-txt position-absolute d-none d-md-block ">
+        <p class="a">ACCURATE TIME KEEPING AND TROUBLE FREE PERFORMANCE</p>
+        <p>HMT WATCHES</p>
+        <button class="btn custom-btn ">DISCOVER YOUR STYLE</button>
+    </div>
+
+</section>
+
+<section >
+    <div class="container-fluid mt-5 footer">
+        <div class="row mx-5  ">
+            <div class="col-md-2 col-12 mt-2  ms-md-5">
+                <p class="fw-bold" >Our product</p>
+                <p>Watches</p>
+                <p>Tower Clocks</p>
+            </div>
+              <div class="col-md-2 col-12 mt-2">
+                <p class="fw-bold">CUSTOMER SERVICE</p>
+                <p>payment optionss</p>
+                <p>Track Order</p>
+                <p>Find a store</p>
+                <p>Gifting</p>
+                <p>Contact us</p>
+                <p>FAQ</p>
+            </div>
+              <div class="col-md-2 col-12 mt-2">
+                <p class="fw-bold">Policies</p>
+                <p>Return & Exchange</p>
+                <p>Cancellation</p>
+                <p>Shipping</p>
+                <p>Warranty Policies</p>
+                <p>Terms & Condition</p>
+                <p>Privacy Policy</p>
+            </div>
+              <div class="col-md-2 col-12 mt-2">
+                <p class="fw-bold">About us</p>
+                <p>Corporate</p>
+                <p>Vision $ Mission</p>
+                  <p>Right to information</p>
+                  <p>Vigilance corner</p>
+                  <p>Careers</p>
+            </div>
+              <div class="col-md-2 col-12 mt-2">
+                <p class="fw-bold">HMT LIMITED</p>
+                <p>Auxiliary Business Division
+Jalahalli, Bengaluru -560013
+GSTIN : 29AAACH7073D2ZL</p>
+         
+ <div class="social-media ">
+                <p>Follow us on</p>
+                <div class="social-icons d-flex gap-3">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../script/script.js"></script>
+</body>
+</html>
