@@ -28,3 +28,38 @@
                 });
             }
         }
+
+        
+const scrollTopbtn=document.getElementById("scroll_top_btn");
+
+window.addEventListener('scroll',()=>{
+    scrollTopbtn.classList.toggle('visible',window.scrollY > 400)
+},{passive:true})
+
+    scrollTopbtn.addEventListener('click',()=>{
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
+})
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const nav = document.querySelector('.container');
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+
+    window.addEventListener('scroll', () => {
+        
+        nav.classList.remove('show-links');
+
+        if (window.scrollY > 50) {
+            nav.classList.add('is-sticky');
+        } else {
+            nav.classList.remove('is-sticky');
+        }
+    });
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show-links');
+    });
+});

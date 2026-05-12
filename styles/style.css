@@ -8,13 +8,13 @@ body {
     background-color: #0033AB;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
     background-color: black;
 }
 
 .dropdown-item {
     color: white;
-}
+} */
 
 .dropdown-item:hover {
     background-color: #222;
@@ -25,10 +25,10 @@ body {
     font-size: 14px;
 }
 
-.language-btn {
+/* .language-btn {
     background-color: white;
     color: black;
-}
+} */
 
 .language-btn:hover {
     background-color: #f0f0f0;
@@ -384,7 +384,7 @@ display: flex;
 }
 
 .hpm {
-    color: white;
+    /* color: white; */
     background: linear-gradient(70deg, rgb(233,30,99), rgb(156,39,176));
     background-size: 200% 200%;
     background-position: left;
@@ -402,29 +402,98 @@ display: flex;
 .banner .banner-txt{
        right: 50px;
     left: auto;
-    margin-left: 0;
+    /* margin-left: 0; */
     top: 50%;
     transform: translateY(-50%);
-    text-align: right;
+    /* text-align: right; */
     bottom: auto;
 }
 
 .footer{
     background-color: #0033AB;
-    color: white;
     padding-left: 120px;
 }
 
-.social-media a{
+/* .social-media a{
     color: white;
+} */
+
+#scroll_top_btn{
+    visibility: hidden;
+}
+#scroll_top_btn.visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.container.is-sticky .left, 
+.container.is-sticky .right {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.container .mobile-menu-btn {
+    display: none; 
+    
+}
+
+.container.is-sticky .mobile-menu-btn {
+    display: flex;
 }
 
 
-@media (max-width: 768px){
+.container.is-sticky.show-links .left, 
+.container.is-sticky.show-links .right {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+.container.is-sticky.show-links .image {
+    opacity: 1; /* Force full visibility */
+    visibility: visible;
+}
+
+.target-list{
+    color: #0033AB;
+}
+
+
+
+@media (max-width: 1024px){
 
     .carousel-img{
         height: 300px;
     }
+
+    .icon-search{
+        display: none;
+    }
+
+    .right{
+        padding-left: 70px;
+    }
+
+    
+
+    .banner-txt p{
+        font-size: 10px;
+    }
+
+    #aa{
+        display: none;
+    }
+
+    #pp{
+        font-size: 16px;
+        padding-right: 40px;
+    }
+
+
 }
 
 @media (max-width: 576px){

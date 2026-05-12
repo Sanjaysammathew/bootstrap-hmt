@@ -23,13 +23,13 @@
 
         <div class="d-flex align-items-center gap-3 w-100 justify-content-between justify-content-lg-end">
 
-            <div class="dropdown">
-                <button class="btn language-btn dropdown-toggle ps-3 pe-3 me-3"
+            <div class="dropdown" >
+                <button class="btn language-btn dropdown-toggle ps-3 pe-3 me-3 bg-white text-dark"
                         type="button"
                         data-bs-toggle="dropdown">
                     Language
                 </button>
-                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
+                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end bg-white text-dark" style="z-index: 1001;">
                     <li><a class="dropdown-item" href="#">English</a></li>
                     <li><a class="dropdown-item" href="#">Tamil</a></li>
                     <li><a class="dropdown-item" href="#">Hindi</a></li>
@@ -69,11 +69,21 @@
     </div>
 </nav>
 
-<section >
-    <div class="container mt-3 ms-5 d-md-block d-none  ">
-        <div class="row align-items-center ">
+<section class="sticky-top bg-white py-2 container1" style="z-index: 1000;">
+       
+    <div class="container mt-3 ms-5 d-md-block d-none">
+    
+        <div class="row align-items-center">
+      
+         <button 
+    class="mobile-menu-btn  position-absolute border-0 bg-transparent fs-4 start-0 top-50 translate-middle-y ms-3 cursor-pointer"
+    id="mobileMenuBtn">
 
-            <div class="col-md-5">
+    <i class="fa fa-bars"></i>
+
+</button>
+
+            <div class="col-md-5 left">
                 <ul class="d-flex gap-5 list-unstyled mb-0 justify-content-end me-2">
                     <li class="list-text">WATCHES</li>
                     <li class="list-text">TOWER CLOCK</li>
@@ -85,17 +95,18 @@
                 <img src="../assests/logo.png" alt="Logo" style="width: 150px;">
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-5 right">
                 <ul class="d-flex gap-5 list-unstyled mb-0 justify-content-start align-items-center">
                     <li class="list-text">ABOUT US</li>
                     <li class="list-text">CONTACT US</li>
                     <li class="list-text">STORE LOCATOR</li>
-                    <li><i class="bi bi-search"></i></li>
+                    <li class="icon-search"><i class="bi bi-search"></i></li>
                 </ul>
             </div>
 
         </div>
     </div>
+</section>
 
     <nav class="navbar navbar-light d-md-none d-block">
         <div class="container-fluid d-flex align-items-center justify-content-between px-4">
@@ -216,7 +227,7 @@
 
 <section  class="mt-4">
     <ul class="list-unstyled d-flex text-secondary fw-bold gap-4 justify-content-center list-items">
-        <li>Newly Listed</li>
+        <li class="target-list">Newly Listed</li>
         <li>Fast Moving</li>
         <li>Product With Offer</li>
         <li>Premium Watches</li>
@@ -355,7 +366,7 @@
 
     <div class="banner-txt position-absolute d-none d-md-block ">
         <p class="a">ACCURATE TIME KEEPING AND TROUBLE FREE PERFORMANCE</p>
-        <p>HMT WATCHES</p>
+        <p class="fw-bold">HMT WATCHES</p>
         <button class="btn custom-btn ">DISCOVER YOUR STYLE</button>
     </div>
 
@@ -364,8 +375,8 @@
  <div class="paragraph ">
         <p>We have immense pleasure in welcoming you to the official website of HMT Watches!. HMT, a Public Sector Undertaking by Government of India, is a pioneer in Watch manufacturing in India since 1961. HMT uses High Quality, Precision Metallic components for Accurate time keeping and trouble free performance - that lasts a life time. Mechanical Hand wound, Automatic, Quarts, the Braille, the Skeleton Watch, Pocket Watch - each a true masterpiece in its class. HMT Watches come in a wide range of Attractive designs and Affordable Price. Watches that are an exquisite blend of form and function, of style and substance.</p>
         <div class="p-button-container">
-            <button class="hhw">HISTORY OF HMT WATCHES</button>
-            <button class="hpm">HMT PREMIUM WATCHES</button>
+            <button class=" hhw">HISTORY OF HMT WATCHES</button>
+            <button class="hpm text-white">HMT PREMIUM WATCHES</button>
         </div>
     </div>
 
@@ -375,23 +386,25 @@
         <img src="../assests/banner2.jpg" class="w-100" alt="">
     </div>
 
-    <div class="banner-txt position-absolute d-none d-md-block ">
-        <p class="a">ACCURATE TIME KEEPING AND TROUBLE FREE PERFORMANCE</p>
-        <p>HMT WATCHES</p>
-        <button class="btn custom-btn ">DISCOVER YOUR STYLE</button>
+    <div class="banner-txt position-absolute d-none d-md-block ms-0 text-align-right ">
+        <p class="a" id="aa">EACH A TRUE MASTERPIECE IN ITS CLASS.</p>
+        <p id="pp" class="fw-bold">HMT SKELETON</p>
+        <button class="btn custom-btn ">FIND YOUR TYPE</button>
     </div>
 
 </section>
 
-<section >
-    <div class="container-fluid mt-5 footer">
-        <div class="row mx-5  ">
-            <div class="col-md-2 col-12 mt-2  ms-md-5">
-                <p class="fw-bold" >Our product</p>
+<section>
+    <div class="container-fluid mt-5 footer text-white">
+        <div class="row mx-5 ">
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4 ms-lg-5">
+                <p class="fw-bold">Our product</p>
                 <p>Watches</p>
                 <p>Tower Clocks</p>
             </div>
-              <div class="col-md-2 col-12 mt-2">
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4">
                 <p class="fw-bold">CUSTOMER SERVICE</p>
                 <p>payment optionss</p>
                 <p>Track Order</p>
@@ -400,7 +413,8 @@
                 <p>Contact us</p>
                 <p>FAQ</p>
             </div>
-              <div class="col-md-2 col-12 mt-2">
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4">
                 <p class="fw-bold">Policies</p>
                 <p>Return & Exchange</p>
                 <p>Cancellation</p>
@@ -409,35 +423,44 @@
                 <p>Terms & Condition</p>
                 <p>Privacy Policy</p>
             </div>
-              <div class="col-md-2 col-12 mt-2">
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4">
                 <p class="fw-bold">About us</p>
                 <p>Corporate</p>
                 <p>Vision $ Mission</p>
-                  <p>Right to information</p>
-                  <p>Vigilance corner</p>
-                  <p>Careers</p>
+                <p>Right to information</p>
+                <p>Vigilance corner</p>
+                <p>Careers</p>
             </div>
-              <div class="col-md-2 col-12 mt-2">
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4">
                 <p class="fw-bold">HMT LIMITED</p>
-                <p>Auxiliary Business Division
-Jalahalli, Bengaluru -560013
-GSTIN : 29AAACH7073D2ZL</p>
-         
- <div class="social-media ">
-                <p>Follow us on</p>
-                <div class="social-icons d-flex gap-3">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                <p>
+                    Auxiliary Business Division 
+                    Jalahalli, Bengaluru -560013 
+                    GSTIN : 29AAACH7073D2ZL
+                </p>
+
+                <div class="social-media">
+                    <p>Follow us on</p>
+
+                    <div class="social-icons d-flex gap-3 ">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
-               
-            </div>
+
         </div>
     </div>
 </section>
-  
+
+<button class="bg-dark text-white p-3 position-fixed bottom-0 end-0 m-4 border-0" id="scroll_top_btn">
+    TOP
+</button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../script/script.js"></script>
